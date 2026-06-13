@@ -1,0 +1,67 @@
+# openspec/config.yaml
+schema: spec-driven
+
+context: |
+  Project: vst-design
+  Goal: Build "PluginStudio" — a specialized UI prototyping tool for analog-style audio plugin interfaces.
+  Description: A "Figma for Audio Plugins" that exports structured JSON consumable by JUCE C++ developers.
+  Stack: Greenfield (not yet decided — user wants to build from scratch)
+  Architecture: Not yet established
+  Testing: No test runner detected (strict_tdd: false)
+  Style: Not yet established
+  Initialized: 2026-06-13
+
+rules:
+  proposal:
+    - Include rollback plan for risky changes
+  specs:
+    - Use Given/When/Then for scenarios
+    - Use RFC 2119 keywords (MUST, SHALL, SHOULD, MAY)
+  design:
+    - Include sequence diagrams for complex flows
+    - Document architecture decisions with rationale
+  tasks:
+    - Group by phase, use hierarchical numbering
+    - Keep tasks completable in one session
+  apply:
+    - Follow existing code patterns
+    tdd: false
+    test_command: ""
+  verify:
+    test_command: ""
+    build_command: ""
+    coverage_threshold: 0
+  archive:
+    - Warn before merging destructive deltas
+
+testing:
+  strict_tdd: false
+  detected: "2026-06-13"
+  reason: "No test runner configured — greenfield project with no package manager, dependency file, or CI config found"
+  runner:
+    available: false
+    command: ""
+    framework: ""
+  layers:
+    unit:
+      available: false
+      tool: ""
+    integration:
+      available: false
+      tool: ""
+    e2e:
+      available: false
+      tool: ""
+  coverage:
+    available: false
+    command: ""
+  quality:
+    linter:
+      available: false
+      command: ""
+    type_checker:
+      available: false
+      command: ""
+    formatter:
+      available: false
+      command: ""

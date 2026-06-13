@@ -1,0 +1,73 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`toPluginDesignJson > JSON snapshots match expected structure 1`] = `
+{
+  "plugin_meta": {
+    "base_height": 600,
+    "base_width": 800,
+    "name": "TestPlugin",
+  },
+  "schema_version": 1,
+  "ui_components": [
+    {
+      "asset_path": "assets/knob.png",
+      "component_type": "Knob",
+      "config": {
+        "default_value": 50,
+        "max": 100,
+        "min": 0,
+        "total_frames": 100,
+      },
+      "frames": 100,
+      "height": 80,
+      "id": "gain_knob",
+      "parameter_id": "param_gain",
+      "width": 80,
+      "x": 50,
+      "y": 60,
+    },
+    {
+      "component_type": "Switch",
+      "config": {
+        "states": [
+          "Off",
+          "On",
+        ],
+      },
+      "height": 60,
+      "id": "power_switch",
+      "parameter_id": "param_power",
+      "width": 40,
+      "x": 200,
+      "y": 50,
+    },
+    {
+      "asset_path": "assets/vu.png",
+      "component_type": "VUMeter",
+      "config": {
+        "damping": 0.3,
+        "needle_length": 80,
+      },
+      "height": 200,
+      "id": "level_meter",
+      "width": 30,
+      "x": 300,
+      "y": 100,
+    },
+    {
+      "component_type": "LED",
+      "config": {
+        "color_off": "#333333",
+        "color_on": "#FF0000",
+        "mode": "on_off",
+      },
+      "height": 20,
+      "id": "clip_led",
+      "parameter_id": "param_clip",
+      "width": 20,
+      "x": 400,
+      "y": 50,
+    },
+  ],
+}
+`;
